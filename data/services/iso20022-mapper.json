@@ -1,0 +1,30 @@
+{
+  "name": "iso20022-mapper",
+  "team": "payments",
+  "owner": "payments-team@example.com",
+  "language": "java",
+  "runtime": "Java 17",
+  "repo": "https://git.example.com/payments/iso20022-mapper",
+  "tier": 2,
+  "calls": [],
+  "publishes": [],
+  "consumes": [],
+  "libraries": [
+    {
+      "name": "org.springframework.boot:spring-boot-starter",
+      "version": "2.7.18"
+    },
+    {
+      "name": "org.apache.logging.log4j:log4j-core",
+      "version": "2.23.1"
+    },
+    {
+      "name": "org.apache.kafka:kafka-clients",
+      "version": "3.7.0"
+    },
+    {
+      "name": "org.postgresql:postgresql",
+      "version": "42.7.3"
+    }
+  ]
+}

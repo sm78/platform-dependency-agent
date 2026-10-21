@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "loan.approved",
+  "version": 1,
+  "status": "current",
+  "producer": "credit-decisioning",
+  "type": "object",
+  "properties": {
+    "application_id": {
+      "type": "string"
+    },
+    "customer_id": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "number"
+    },
+    "rate": {
+      "type": "number"
+    },
+    "term_months": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "application_id",
+    "customer_id",
+    "amount",
+    "rate",
+    "term_months"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "wire-engine",
+  "team": "payments",
+  "owner": "payments-team@example.com",
+  "language": "java",
+  "runtime": "Java 11",
+  "repo": "https://git.example.com/payments/wire-engine",
+  "tier": 2,
+  "calls": [
+    "iso20022-mapper",
+    "ledger-service",
+    "audit-log"
+  ],
+  "publishes": [],
+  "consumes": [],
+  "libraries": [
+    {
+      "name": "org.apache.logging.log4j:log4j-core",
+      "version": "2.14.1",
+      "known_advisory": "CVE-2021-44228 (Log4Shell), critical"
+    },
+    {
+      "name": "com.fasterxml.jackson.core:jackson-databind",
+      "version": "2.12.3",
+      "known_advisory": "multiple deserialization CVEs, high"
+    },
+    {
+      "name": "org.apache.kafka:kafka-clients",
+      "version": "3.7.0"
+    },
+    {
+      "name": "org.postgresql:postgresql",
+      "version": "42.7.3"
+    },
+    {
+      "name": "io.micrometer:micrometer-core",
+      "version": "1.12.5"
+    }
+  ]
+}

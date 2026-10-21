@@ -1,0 +1,33 @@
+{
+  "name": "loan-servicing",
+  "team": "lending",
+  "owner": "lending-team@example.com",
+  "language": "java",
+  "runtime": "Java 11",
+  "repo": "https://git.example.com/lending/loan-servicing",
+  "tier": 2,
+  "calls": [
+    "ledger-service",
+    "account-service"
+  ],
+  "publishes": [],
+  "consumes": [],
+  "libraries": [
+    {
+      "name": "org.springframework.boot:spring-boot-starter",
+      "version": "2.7.18"
+    },
+    {
+      "name": "org.apache.logging.log4j:log4j-core",
+      "version": "2.17.2"
+    },
+    {
+      "name": "com.fasterxml.jackson.core:jackson-databind",
+      "version": "2.15.2"
+    },
+    {
+      "name": "org.postgresql:postgresql",
+      "version": "42.7.3"
+    }
+  ]
+}

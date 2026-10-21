@@ -1,0 +1,39 @@
+{
+  "name": "reporting-service",
+  "team": "accounts",
+  "owner": "accounts-team@example.com",
+  "language": "python",
+  "runtime": "Python 3.9",
+  "repo": "https://git.example.com/accounts/reporting-service",
+  "tier": 2,
+  "calls": [
+    "ledger-service",
+    "account-service",
+    "loan-servicing"
+  ],
+  "publishes": [],
+  "consumes": [
+    {
+      "event": "payment.initiated",
+      "schema_version": 1
+    },
+    {
+      "event": "account.opened",
+      "schema_version": 1
+    },
+    {
+      "event": "loan.approved",
+      "schema_version": 1
+    }
+  ],
+  "libraries": [
+    {
+      "name": "pydantic",
+      "version": "2.8.2"
+    },
+    {
+      "name": "confluent-kafka",
+      "version": "2.4.0"
+    }
+  ]
+}

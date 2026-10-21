@@ -1,0 +1,36 @@
+{
+  "name": "interac-adapter",
+  "team": "payments",
+  "owner": "payments-team@example.com",
+  "language": "java",
+  "runtime": "Java 11",
+  "repo": "https://git.example.com/payments/interac-adapter",
+  "tier": 2,
+  "calls": [
+    "ledger-service"
+  ],
+  "publishes": [],
+  "consumes": [],
+  "libraries": [
+    {
+      "name": "org.springframework.boot:spring-boot-starter",
+      "version": "3.2.5"
+    },
+    {
+      "name": "org.apache.logging.log4j:log4j-core",
+      "version": "2.23.1"
+    },
+    {
+      "name": "org.apache.kafka:kafka-clients",
+      "version": "3.7.0"
+    },
+    {
+      "name": "org.postgresql:postgresql",
+      "version": "42.7.3"
+    },
+    {
+      "name": "io.micrometer:micrometer-core",
+      "version": "1.12.5"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "customer.kyc_completed",
+  "version": 2,
+  "status": "current",
+  "producer": "kyc-service",
+  "type": "object",
+  "properties": {
+    "customer_id": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "risk_rating": {
+      "type": "string"
+    },
+    "verified_at": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "customer_id",
+    "status",
+    "risk_rating",
+    "verified_at"
+  ]
+}

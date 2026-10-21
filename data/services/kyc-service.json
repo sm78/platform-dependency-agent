@@ -1,0 +1,37 @@
+{
+  "name": "kyc-service",
+  "team": "customer",
+  "owner": "customer-team@example.com",
+  "language": "python",
+  "runtime": "Python 3.9",
+  "repo": "https://git.example.com/customer/kyc-service",
+  "tier": 2,
+  "calls": [],
+  "publishes": [
+    "customer.kyc_completed"
+  ],
+  "consumes": [],
+  "libraries": [
+    {
+      "name": "requests",
+      "version": "2.25.1",
+      "known_advisory": "CVE-2023-32681 (proxy auth leak), medium"
+    },
+    {
+      "name": "pydantic",
+      "version": "2.8.2"
+    },
+    {
+      "name": "fastapi",
+      "version": "0.110.0"
+    },
+    {
+      "name": "sqlalchemy",
+      "version": "2.0.30"
+    },
+    {
+      "name": "numpy",
+      "version": "1.26.4"
+    }
+  ]
+}

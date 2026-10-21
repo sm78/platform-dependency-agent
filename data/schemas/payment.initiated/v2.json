@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "payment.initiated",
+  "version": 2,
+  "status": "current",
+  "producer": "payment-orchestrator",
+  "type": "object",
+  "properties": {
+    "payment_id": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "number"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "debtor_account": {
+      "type": "string"
+    },
+    "creditor_account": {
+      "type": "string"
+    },
+    "rail": {
+      "type": "string"
+    },
+    "end_to_end_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "payment_id",
+    "amount",
+    "currency",
+    "debtor_account",
+    "creditor_account",
+    "rail",
+    "end_to_end_id"
+  ]
+}

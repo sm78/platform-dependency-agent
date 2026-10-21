@@ -1,0 +1,35 @@
+{
+  "name": "case-management",
+  "team": "fraud",
+  "owner": "fraud-team@example.com",
+  "language": "node",
+  "runtime": "Node.js 20",
+  "repo": "https://git.example.com/fraud/case-management",
+  "tier": 2,
+  "calls": [
+    "customer-profile",
+    "audit-log"
+  ],
+  "publishes": [],
+  "consumes": [
+    {
+      "event": "fraud.alert_raised",
+      "schema_version": 1
+    }
+  ],
+  "libraries": [
+    {
+      "name": "express",
+      "version": "4.19.2"
+    },
+    {
+      "name": "axios",
+      "version": "1.6.8"
+    },
+    {
+      "name": "lodash",
+      "version": "4.17.20",
+      "known_advisory": "CVE-2021-23337 (command injection), high"
+    }
+  ]
+}

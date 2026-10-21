@@ -1,0 +1,56 @@
+{
+  "name": "notification-hub",
+  "team": "notifications",
+  "owner": "notifications-team@example.com",
+  "language": "node",
+  "runtime": "Node.js 20",
+  "repo": "https://git.example.com/notifications/notification-hub",
+  "tier": 2,
+  "calls": [],
+  "publishes": [],
+  "consumes": [
+    {
+      "event": "payment.initiated",
+      "schema_version": 1
+    },
+    {
+      "event": "payment.settled",
+      "schema_version": 1
+    },
+    {
+      "event": "account.opened",
+      "schema_version": 3
+    },
+    {
+      "event": "card.authorized",
+      "schema_version": 1
+    },
+    {
+      "event": "loan.approved",
+      "schema_version": 1
+    },
+    {
+      "event": "fraud.alert_raised",
+      "schema_version": 1
+    }
+  ],
+  "libraries": [
+    {
+      "name": "axios",
+      "version": "1.6.8"
+    },
+    {
+      "name": "kafkajs",
+      "version": "2.2.4"
+    },
+    {
+      "name": "lodash",
+      "version": "4.17.21"
+    },
+    {
+      "name": "jsonwebtoken",
+      "version": "8.5.1",
+      "known_advisory": "CVE-2022-23529 and related, high"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "payment.initiated",
+  "version": 1,
+  "status": "deprecated",
+  "producer": "payment-orchestrator",
+  "type": "object",
+  "properties": {
+    "payment_id": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "number"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "debtor_account": {
+      "type": "string"
+    },
+    "creditor_account": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "payment_id",
+    "amount",
+    "currency",
+    "debtor_account",
+    "creditor_account"
+  ]
+}

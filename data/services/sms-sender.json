@@ -1,0 +1,34 @@
+{
+  "name": "sms-sender",
+  "team": "notifications",
+  "owner": "notifications-team@example.com",
+  "language": "node",
+  "runtime": "Node.js 18",
+  "repo": "https://git.example.com/notifications/sms-sender",
+  "tier": 2,
+  "calls": [],
+  "publishes": [],
+  "consumes": [],
+  "libraries": [
+    {
+      "name": "express",
+      "version": "4.17.1"
+    },
+    {
+      "name": "axios",
+      "version": "1.7.2"
+    },
+    {
+      "name": "kafkajs",
+      "version": "1.16.0"
+    },
+    {
+      "name": "lodash",
+      "version": "4.17.21"
+    },
+    {
+      "name": "jsonwebtoken",
+      "version": "9.0.2"
+    }
+  ]
+}

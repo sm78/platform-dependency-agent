@@ -1,0 +1,42 @@
+{
+  "name": "payment-orchestrator",
+  "team": "payments",
+  "owner": "payments-team@example.com",
+  "language": "java",
+  "runtime": "Java 17",
+  "repo": "https://git.example.com/payments/payment-orchestrator",
+  "tier": 1,
+  "calls": [
+    "account-service",
+    "fraud-scoring",
+    "aml-screening",
+    "wire-engine",
+    "rtr-connector",
+    "interac-adapter",
+    "fx-rates"
+  ],
+  "publishes": [
+    "payment.initiated"
+  ],
+  "consumes": [
+    {
+      "event": "payment.settled",
+      "schema_version": 1
+    }
+  ],
+  "libraries": [
+    {
+      "name": "com.fasterxml.jackson.core:jackson-databind",
+      "version": "2.12.3",
+      "known_advisory": "multiple deserialization CVEs, high"
+    },
+    {
+      "name": "org.apache.kafka:kafka-clients",
+      "version": "3.7.0"
+    },
+    {
+      "name": "io.micrometer:micrometer-core",
+      "version": "1.12.5"
+    }
+  ]
+}

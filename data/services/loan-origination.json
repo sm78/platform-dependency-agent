@@ -1,0 +1,53 @@
+{
+  "name": "loan-origination",
+  "team": "lending",
+  "owner": "lending-team@example.com",
+  "language": "java",
+  "runtime": "Java 17",
+  "repo": "https://git.example.com/lending/loan-origination",
+  "tier": 2,
+  "calls": [
+    "credit-decisioning",
+    "kyc-service",
+    "customer-profile"
+  ],
+  "publishes": [],
+  "consumes": [
+    {
+      "event": "customer.kyc_completed",
+      "schema_version": 1
+    },
+    {
+      "event": "loan.approved",
+      "schema_version": 1
+    }
+  ],
+  "libraries": [
+    {
+      "name": "org.springframework.boot:spring-boot-starter",
+      "version": "2.7.18"
+    },
+    {
+      "name": "org.apache.logging.log4j:log4j-core",
+      "version": "2.14.1",
+      "known_advisory": "CVE-2021-44228 (Log4Shell), critical"
+    },
+    {
+      "name": "com.fasterxml.jackson.core:jackson-databind",
+      "version": "2.12.3",
+      "known_advisory": "multiple deserialization CVEs, high"
+    },
+    {
+      "name": "org.apache.kafka:kafka-clients",
+      "version": "2.8.1"
+    },
+    {
+      "name": "org.postgresql:postgresql",
+      "version": "42.7.3"
+    },
+    {
+      "name": "io.micrometer:micrometer-core",
+      "version": "1.9.17"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "account-service",
+  "team": "accounts",
+  "owner": "accounts-team@example.com",
+  "language": "java",
+  "runtime": "Java 17",
+  "repo": "https://git.example.com/accounts/account-service",
+  "tier": 3,
+  "calls": [
+    "ledger-service",
+    "customer-profile",
+    "audit-log"
+  ],
+  "publishes": [
+    "account.opened"
+  ],
+  "consumes": [],
+  "libraries": [
+    {
+      "name": "org.springframework.boot:spring-boot-starter",
+      "version": "2.7.18"
+    },
+    {
+      "name": "org.apache.logging.log4j:log4j-core",
+      "version": "2.14.1",
+      "known_advisory": "CVE-2021-44228 (Log4Shell), critical"
+    },
+    {
+      "name": "com.fasterxml.jackson.core:jackson-databind",
+      "version": "2.12.3",
+      "known_advisory": "multiple deserialization CVEs, high"
+    },
+    {
+      "name": "io.micrometer:micrometer-core",
+      "version": "1.12.5"
+    }
+  ]
+}

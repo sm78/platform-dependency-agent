@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "account.opened",
+  "version": 3,
+  "status": "current",
+  "producer": "account-service",
+  "type": "object",
+  "properties": {
+    "account_id": {
+      "type": "string"
+    },
+    "customer_id": {
+      "type": "string"
+    },
+    "product_code": {
+      "type": "string"
+    },
+    "opened_channel": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "account_id",
+    "customer_id",
+    "product_code",
+    "opened_channel"
+  ]
+}

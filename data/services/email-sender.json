@@ -1,0 +1,35 @@
+{
+  "name": "email-sender",
+  "team": "notifications",
+  "owner": "notifications-team@example.com",
+  "language": "python",
+  "runtime": "Python 3.11",
+  "repo": "https://git.example.com/notifications/email-sender",
+  "tier": 3,
+  "calls": [],
+  "publishes": [],
+  "consumes": [],
+  "libraries": [
+    {
+      "name": "requests",
+      "version": "2.25.1",
+      "known_advisory": "CVE-2023-32681 (proxy auth leak), medium"
+    },
+    {
+      "name": "pydantic",
+      "version": "1.10.13"
+    },
+    {
+      "name": "fastapi",
+      "version": "0.110.0"
+    },
+    {
+      "name": "sqlalchemy",
+      "version": "1.4.52"
+    },
+    {
+      "name": "confluent-kafka",
+      "version": "1.9.2"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "fx-rates",
+  "team": "payments",
+  "owner": "payments-team@example.com",
+  "language": "python",
+  "runtime": "Python 3.10",
+  "repo": "https://git.example.com/payments/fx-rates",
+  "tier": 3,
+  "calls": [],
+  "publishes": [],
+  "consumes": [],
+  "libraries": [
+    {
+      "name": "requests",
+      "version": "2.32.3"
+    },
+    {
+      "name": "pydantic",
+      "version": "1.10.13"
+    },
+    {
+      "name": "fastapi",
+      "version": "0.95.2"
+    },
+    {
+      "name": "sqlalchemy",
+      "version": "1.4.52"
+    },
+    {
+      "name": "confluent-kafka",
+      "version": "2.4.0"
+    },
+    {
+      "name": "numpy",
+      "version": "1.26.4"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "card-issuing",
+  "team": "cards",
+  "owner": "cards-team@example.com",
+  "language": "java",
+  "runtime": "Java 17",
+  "repo": "https://git.example.com/cards/card-issuing",
+  "tier": 2,
+  "calls": [],
+  "publishes": [],
+  "consumes": [],
+  "libraries": [
+    {
+      "name": "org.springframework.boot:spring-boot-starter",
+      "version": "2.7.18"
+    },
+    {
+      "name": "org.apache.kafka:kafka-clients",
+      "version": "3.5.1"
+    }
+  ]
+}

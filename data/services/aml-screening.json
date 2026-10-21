@@ -1,0 +1,30 @@
+{
+  "name": "aml-screening",
+  "team": "fraud",
+  "owner": "fraud-team@example.com",
+  "language": "python",
+  "runtime": "Python 3.10",
+  "repo": "https://git.example.com/fraud/aml-screening",
+  "tier": 2,
+  "calls": [
+    "customer-profile",
+    "case-management"
+  ],
+  "publishes": [],
+  "consumes": [
+    {
+      "event": "payment.initiated",
+      "schema_version": 1
+    },
+    {
+      "event": "customer.kyc_completed",
+      "schema_version": 1
+    }
+  ],
+  "libraries": [
+    {
+      "name": "fastapi",
+      "version": "0.115.0"
+    }
+  ]
+}

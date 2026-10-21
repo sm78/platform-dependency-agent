@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "account.opened",
+  "version": 1,
+  "status": "deprecated",
+  "producer": "account-service",
+  "type": "object",
+  "properties": {
+    "account_id": {
+      "type": "string"
+    },
+    "customer_id": {
+      "type": "string"
+    },
+    "product": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "account_id",
+    "customer_id",
+    "product"
+  ]
+}

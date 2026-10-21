@@ -1,0 +1,47 @@
+{
+  "name": "audit-log",
+  "team": "platform",
+  "owner": "platform-team@example.com",
+  "language": "java",
+  "runtime": "Java 21",
+  "repo": "https://git.example.com/platform/audit-log",
+  "tier": 2,
+  "calls": [],
+  "publishes": [],
+  "consumes": [
+    {
+      "event": "payment.initiated",
+      "schema_version": 2
+    },
+    {
+      "event": "account.opened",
+      "schema_version": 3
+    }
+  ],
+  "libraries": [
+    {
+      "name": "org.springframework.boot:spring-boot-starter",
+      "version": "3.3.4"
+    },
+    {
+      "name": "org.apache.logging.log4j:log4j-core",
+      "version": "2.17.2"
+    },
+    {
+      "name": "com.fasterxml.jackson.core:jackson-databind",
+      "version": "2.17.1"
+    },
+    {
+      "name": "org.apache.kafka:kafka-clients",
+      "version": "3.5.1"
+    },
+    {
+      "name": "org.postgresql:postgresql",
+      "version": "42.2.20"
+    },
+    {
+      "name": "io.micrometer:micrometer-core",
+      "version": "1.9.17"
+    }
+  ]
+}

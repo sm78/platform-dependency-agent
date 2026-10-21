@@ -1,0 +1,212 @@
+[
+  {
+    "name": "api-gateway",
+    "team": "platform",
+    "language": "java",
+    "runtime": "Java 21",
+    "tier": 1
+  },
+  {
+    "name": "auth-service",
+    "team": "platform",
+    "language": "java",
+    "runtime": "Java 17",
+    "tier": 1
+  },
+  {
+    "name": "customer-profile",
+    "team": "customer",
+    "language": "java",
+    "runtime": "Java 11",
+    "tier": 2
+  },
+  {
+    "name": "kyc-service",
+    "team": "customer",
+    "language": "python",
+    "runtime": "Python 3.9",
+    "tier": 2
+  },
+  {
+    "name": "account-service",
+    "team": "accounts",
+    "language": "java",
+    "runtime": "Java 17",
+    "tier": 3
+  },
+  {
+    "name": "ledger-service",
+    "team": "accounts",
+    "language": "java",
+    "runtime": "Java 11",
+    "tier": 1
+  },
+  {
+    "name": "statement-service",
+    "team": "accounts",
+    "language": "python",
+    "runtime": "Python 3.11",
+    "tier": 2
+  },
+  {
+    "name": "payment-orchestrator",
+    "team": "payments",
+    "language": "java",
+    "runtime": "Java 17",
+    "tier": 1
+  },
+  {
+    "name": "wire-engine",
+    "team": "payments",
+    "language": "java",
+    "runtime": "Java 11",
+    "tier": 2
+  },
+  {
+    "name": "rtr-connector",
+    "team": "payments",
+    "language": "java",
+    "runtime": "Java 21",
+    "tier": 2
+  },
+  {
+    "name": "interac-adapter",
+    "team": "payments",
+    "language": "java",
+    "runtime": "Java 11",
+    "tier": 2
+  },
+  {
+    "name": "iso20022-mapper",
+    "team": "payments",
+    "language": "java",
+    "runtime": "Java 17",
+    "tier": 2
+  },
+  {
+    "name": "fx-rates",
+    "team": "payments",
+    "language": "python",
+    "runtime": "Python 3.10",
+    "tier": 3
+  },
+  {
+    "name": "card-issuing",
+    "team": "cards",
+    "language": "java",
+    "runtime": "Java 17",
+    "tier": 2
+  },
+  {
+    "name": "card-authorization",
+    "team": "cards",
+    "language": "java",
+    "runtime": "Java 11",
+    "tier": 1
+  },
+  {
+    "name": "card-disputes",
+    "team": "cards",
+    "language": "node",
+    "runtime": "Node.js 18",
+    "tier": 3
+  },
+  {
+    "name": "loan-origination",
+    "team": "lending",
+    "language": "java",
+    "runtime": "Java 17",
+    "tier": 2
+  },
+  {
+    "name": "credit-decisioning",
+    "team": "lending",
+    "language": "python",
+    "runtime": "Python 3.9",
+    "tier": 2
+  },
+  {
+    "name": "loan-servicing",
+    "team": "lending",
+    "language": "java",
+    "runtime": "Java 11",
+    "tier": 2
+  },
+  {
+    "name": "fraud-scoring",
+    "team": "fraud",
+    "language": "python",
+    "runtime": "Python 3.12",
+    "tier": 2
+  },
+  {
+    "name": "aml-screening",
+    "team": "fraud",
+    "language": "python",
+    "runtime": "Python 3.10",
+    "tier": 2
+  },
+  {
+    "name": "case-management",
+    "team": "fraud",
+    "language": "node",
+    "runtime": "Node.js 20",
+    "tier": 2
+  },
+  {
+    "name": "notification-hub",
+    "team": "notifications",
+    "language": "node",
+    "runtime": "Node.js 20",
+    "tier": 2
+  },
+  {
+    "name": "email-sender",
+    "team": "notifications",
+    "language": "python",
+    "runtime": "Python 3.11",
+    "tier": 3
+  },
+  {
+    "name": "sms-sender",
+    "team": "notifications",
+    "language": "node",
+    "runtime": "Node.js 18",
+    "tier": 2
+  },
+  {
+    "name": "audit-log",
+    "team": "platform",
+    "language": "java",
+    "runtime": "Java 21",
+    "tier": 2
+  },
+  {
+    "name": "feature-flags",
+    "team": "platform",
+    "language": "node",
+    "runtime": "Node.js 20",
+    "tier": 2
+  },
+  {
+    "name": "reporting-service",
+    "team": "accounts",
+    "language": "python",
+    "runtime": "Python 3.9",
+    "tier": 2
+  },
+  {
+    "name": "mobile-bff",
+    "team": "customer",
+    "language": "node",
+    "runtime": "Node.js 20",
+    "tier": 2
+  },
+  {
+    "name": "web-bff",
+    "team": "customer",
+    "language": "node",
+    "runtime": "Node.js 18",
+    "tier": 3
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "name": "web-bff",
+  "team": "customer",
+  "owner": "customer-team@example.com",
+  "language": "node",
+  "runtime": "Node.js 18",
+  "repo": "https://git.example.com/customer/web-bff",
+  "tier": 3,
+  "calls": [
+    "customer-profile",
+    "account-service",
+    "payment-orchestrator",
+    "loan-origination",
+    "feature-flags"
+  ],
+  "publishes": [],
+  "consumes": [],
+  "libraries": [
+    {
+      "name": "express",
+      "version": "4.19.2"
+    },
+    {
+      "name": "axios",
+      "version": "1.6.8"
+    },
+    {
+      "name": "jsonwebtoken",
+      "version": "9.0.2"
+    }
+  ]
+}

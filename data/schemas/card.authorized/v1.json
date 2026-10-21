@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "card.authorized",
+  "version": 1,
+  "status": "current",
+  "producer": "card-authorization",
+  "type": "object",
+  "properties": {
+    "auth_id": {
+      "type": "string"
+    },
+    "card_token": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "number"
+    },
+    "merchant": {
+      "type": "string"
+    },
+    "mcc": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "auth_id",
+    "card_token",
+    "amount",
+    "merchant",
+    "mcc"
+  ]
+}

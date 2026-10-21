@@ -1,0 +1,45 @@
+{
+  "name": "ledger-service",
+  "team": "accounts",
+  "owner": "accounts-team@example.com",
+  "language": "java",
+  "runtime": "Java 11",
+  "repo": "https://git.example.com/accounts/ledger-service",
+  "tier": 1,
+  "calls": [],
+  "publishes": [
+    "payment.settled"
+  ],
+  "consumes": [
+    {
+      "event": "card.authorized",
+      "schema_version": 1
+    }
+  ],
+  "libraries": [
+    {
+      "name": "org.springframework.boot:spring-boot-starter",
+      "version": "3.2.5"
+    },
+    {
+      "name": "org.apache.logging.log4j:log4j-core",
+      "version": "2.17.2"
+    },
+    {
+      "name": "com.fasterxml.jackson.core:jackson-databind",
+      "version": "2.15.2"
+    },
+    {
+      "name": "org.apache.kafka:kafka-clients",
+      "version": "3.7.0"
+    },
+    {
+      "name": "org.postgresql:postgresql",
+      "version": "42.7.3"
+    },
+    {
+      "name": "io.micrometer:micrometer-core",
+      "version": "1.9.17"
+    }
+  ]
+}

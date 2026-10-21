@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "fraud.alert_raised",
+  "version": 1,
+  "status": "current",
+  "producer": "fraud-scoring",
+  "type": "object",
+  "properties": {
+    "alert_id": {
+      "type": "string"
+    },
+    "subject_id": {
+      "type": "string"
+    },
+    "score": {
+      "type": "number"
+    },
+    "reason_codes": {
+      "type": "array"
+    }
+  },
+  "required": [
+    "alert_id",
+    "subject_id",
+    "score",
+    "reason_codes"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "credit-decisioning",
+  "team": "lending",
+  "owner": "lending-team@example.com",
+  "language": "python",
+  "runtime": "Python 3.9",
+  "repo": "https://git.example.com/lending/credit-decisioning",
+  "tier": 2,
+  "calls": [
+    "customer-profile"
+  ],
+  "publishes": [
+    "loan.approved"
+  ],
+  "consumes": [],
+  "libraries": [
+    {
+      "name": "pydantic",
+      "version": "1.10.13"
+    },
+    {
+      "name": "fastapi",
+      "version": "0.110.0"
+    },
+    {
+      "name": "sqlalchemy",
+      "version": "1.4.52"
+    },
+    {
+      "name": "confluent-kafka",
+      "version": "2.4.0"
+    },
+    {
+      "name": "numpy",
+      "version": "1.26.4"
+    }
+  ]
+}

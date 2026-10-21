@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "payment.settled",
+  "version": 1,
+  "status": "current",
+  "producer": "ledger-service",
+  "type": "object",
+  "properties": {
+    "payment_id": {
+      "type": "string"
+    },
+    "settled_at": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "number"
+    },
+    "currency": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "payment_id",
+    "settled_at",
+    "amount",
+    "currency"
+  ]
+}

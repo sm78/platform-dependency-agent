@@ -1,0 +1,29 @@
+{
+  "name": "card-disputes",
+  "team": "cards",
+  "owner": "cards-team@example.com",
+  "language": "node",
+  "runtime": "Node.js 18",
+  "repo": "https://git.example.com/cards/card-disputes",
+  "tier": 3,
+  "calls": [
+    "card-authorization",
+    "case-management"
+  ],
+  "publishes": [],
+  "consumes": [],
+  "libraries": [
+    {
+      "name": "express",
+      "version": "4.17.1"
+    },
+    {
+      "name": "axios",
+      "version": "1.6.8"
+    },
+    {
+      "name": "lodash",
+      "version": "4.17.21"
+    }
+  ]
+}

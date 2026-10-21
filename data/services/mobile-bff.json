@@ -1,0 +1,35 @@
+{
+  "name": "mobile-bff",
+  "team": "customer",
+  "owner": "customer-team@example.com",
+  "language": "node",
+  "runtime": "Node.js 20",
+  "repo": "https://git.example.com/customer/mobile-bff",
+  "tier": 2,
+  "calls": [
+    "customer-profile",
+    "account-service",
+    "payment-orchestrator",
+    "card-issuing",
+    "feature-flags"
+  ],
+  "publishes": [],
+  "consumes": [],
+  "libraries": [
+    {
+      "name": "axios",
+      "version": "0.21.1",
+      "known_advisory": "CVE-2021-3749 (ReDoS), high"
+    },
+    {
+      "name": "lodash",
+      "version": "4.17.20",
+      "known_advisory": "CVE-2021-23337 (command injection), high"
+    },
+    {
+      "name": "jsonwebtoken",
+      "version": "8.5.1",
+      "known_advisory": "CVE-2022-23529 and related, high"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "statement-service",
+  "team": "accounts",
+  "owner": "accounts-team@example.com",
+  "language": "python",
+  "runtime": "Python 3.11",
+  "repo": "https://git.example.com/accounts/statement-service",
+  "tier": 2,
+  "calls": [
+    "ledger-service",
+    "account-service"
+  ],
+  "publishes": [],
+  "consumes": [
+    {
+      "event": "payment.settled",
+      "schema_version": 1
+    }
+  ],
+  "libraries": [
+    {
+      "name": "requests",
+      "version": "2.31.0"
+    },
+    {
+      "name": "fastapi",
+      "version": "0.115.0"
+    },
+    {
+      "name": "sqlalchemy",
+      "version": "2.0.30"
+    },
+    {
+      "name": "numpy",
+      "version": "1.24.4"
+    }
+  ]
+}

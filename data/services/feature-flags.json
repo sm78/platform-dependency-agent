@@ -1,0 +1,27 @@
+{
+  "name": "feature-flags",
+  "team": "platform",
+  "owner": "platform-team@example.com",
+  "language": "node",
+  "runtime": "Node.js 20",
+  "repo": "https://git.example.com/platform/feature-flags",
+  "tier": 2,
+  "calls": [],
+  "publishes": [],
+  "consumes": [],
+  "libraries": [
+    {
+      "name": "express",
+      "version": "4.19.2"
+    },
+    {
+      "name": "axios",
+      "version": "1.6.8"
+    },
+    {
+      "name": "jsonwebtoken",
+      "version": "8.5.1",
+      "known_advisory": "CVE-2022-23529 and related, high"
+    }
+  ]
+}

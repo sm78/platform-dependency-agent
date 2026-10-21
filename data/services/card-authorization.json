@@ -1,0 +1,41 @@
+{
+  "name": "card-authorization",
+  "team": "cards",
+  "owner": "cards-team@example.com",
+  "language": "java",
+  "runtime": "Java 11",
+  "repo": "https://git.example.com/cards/card-authorization",
+  "tier": 1,
+  "calls": [
+    "card-issuing",
+    "fraud-scoring",
+    "ledger-service"
+  ],
+  "publishes": [
+    "card.authorized"
+  ],
+  "consumes": [
+    {
+      "event": "fraud.alert_raised",
+      "schema_version": 1
+    }
+  ],
+  "libraries": [
+    {
+      "name": "org.springframework.boot:spring-boot-starter",
+      "version": "2.7.18"
+    },
+    {
+      "name": "org.apache.logging.log4j:log4j-core",
+      "version": "2.17.2"
+    },
+    {
+      "name": "org.apache.kafka:kafka-clients",
+      "version": "3.7.0"
+    },
+    {
+      "name": "io.micrometer:micrometer-core",
+      "version": "1.9.17"
+    }
+  ]
+}

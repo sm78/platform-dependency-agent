@@ -1,0 +1,18 @@
+[project]
+name = "platform-dependency-agent"
+version = "0.1.0"
+description = "An agent that answers dependency and schema-impact questions about a fleet of services, through custom MCP servers, with tracing and evals."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic",               # Claude API (Day 1 raw tool loop)
+    "mcp[cli]",                # MCP Python SDK (Days 4-6)
+    "langgraph",               # orchestration (Day 3)
+    "langchain-anthropic",     # Claude models inside LangGraph (Day 3)
+    "langchain-mcp-adapters",  # load MCP tools into the agent (Day 6)
+    "langfuse",                # tracing, cost, evals (Days 8-10)
+    "python-dotenv",           # reads .env
+]
+
+[tool.uv]
+package = false
